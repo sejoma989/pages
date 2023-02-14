@@ -71,14 +71,14 @@ h2 {
 h3 {
     font-family: var(--ff-title);
     font-weight: var(--fw-semibold);
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     letter-spacing: 0.08em;
 }
 
 h4 {
     font-family: var(--ff-text1);
     font-size: 1.125rem;
-    font-weight: var(--fw-medium-500);
+    font-weight: var(--fw-semibold);
 
 
 }
@@ -130,22 +130,20 @@ header {
 
 .parrafo {
     font-family: var(--ff-text2);
-    font-size: 1rem;
     font-weight: var(--fw-regular);
     letter-spacing: 0.08em;
 }
 
 .parrafo--enfasis {
     font-family: var(--ff-title);
-    font-size: 1rem;
     font-weight: var(--fw-semibold);
     letter-spacing: 0.08em;
 }
 
 .parrafo--body-1-2-3 {
     font-family: var(--ff-text2);
-    font-size: 0.875rem;
-    font-weight: var(--fw-regular);
+    font-size: 1.125rem;
+    font-weight: var(--fw-regular) ;
     letter-spacing: 0.04em;
 }
 
@@ -162,7 +160,7 @@ header {
     margin: 1em 0;
     padding: 0;
     list-style: none;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: var(--fw-medium-500);
     letter-spacing: 1px;
@@ -223,7 +221,7 @@ header {
 .body--items {
     font-family: var(--ff-text1);
     font-weight: var(--fw-medium);
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 }
 
 .body--items li {
@@ -282,7 +280,7 @@ header {
     margin: 1em 0;
     padding: 0;
     list-style: none;
-    font-size: 0.625rem;
+    font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: var(--fw-medium-500);
     letter-spacing: 1px;
@@ -304,6 +302,9 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    margin: 0.25em;
+    padding: 0.25em;
+
 }
 
 .proyecto__gif {
@@ -317,7 +318,8 @@ header {
 }
 
 .proyecto__header, .proyecto2__header {
-
+    margin: 0.25em;
+    padding: 0.25em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,24 +339,28 @@ header {
 }
 
 
-
 .proyecto__descripcion, .proyecto2__descripcion {
+    margin: 0.25em;
+    padding: 0.25em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--clr-light);
-    align-items: flex-end;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--background-body2);
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+
 }
 
 .proyecto__herramientas, .proyecto2__herramientas  {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var(--ff-text1);
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: var(--fw-medium-500);
     letter-spacing: -0.08em;
 }
@@ -373,3 +379,107 @@ header {
     background: var(--background-body3b);
 }
 /* fin seccion estilo trabajos */
+
+/* inicio seccion estilo otros trabajos */
+.content--body-4 {
+    background: var(--background-body4);
+}
+
+.otros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otro--proyecto {
+
+    align-items: center;
+    margin: 0.25em;
+    padding: 0.25em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: var(--background-body3b);
+    border-radius: 10px;
+}
+
+.otro--proyecto p {
+    font-family: var(--ff-text2);
+    font-weight: var(--fw-medium);
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+}
+
+.otro--proyecto__herramientas {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: var(--ff-text1);
+    margin: 0.2em;
+    padding: 0.2em;
+    list-style: none;
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium);
+    letter-spacing: -0.08em;
+    gap: 1em;
+}
+
+.proyecto__herramientas__item {
+    margin: 0.25em;
+    padding: 0.25em;
+    text-align: center;
+}
+
+.content--body-4a {
+    background: var(--background-body4a);
+}
+/* fin seccion estilo otros trabajos */
+
+/* inicio seccion contactame */
+.content--body-5 {
+    background: var(--background-body5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content--body-5 h2 {
+    text-align: center;
+}
+
+.content--body-5 p {
+    font-family: var(--ff-text2);
+    font-weight: var(--fw-regular);
+    font-size: 1.125rem;
+    letter-spacing: -0.015em;
+    color: var(--clr-80-primary);
+    text-align: center;
+}
+
+.content--body-5 a {
+    width: 50%;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 1em;
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-family: var(--ff-text2);
+    font-weight: var(--fw-regular);
+    font-size: 0.875rem;
+    letter-spacing: -0.015em;
+    color: var(--clr-80-primary);
+    text-align: center;
+}
