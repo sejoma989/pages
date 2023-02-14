@@ -1,0 +1,152 @@
+/* font-family: 'Epilogue', sans-serif; */
+/* font-family: 'Fira Code','Roboto Mono', monospace; */
+/* font-family: 'Inter','Kantumruy Pro', sans-serif; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    /* colors */
+    --clr-primary: #092845;
+    --clr-80-primary: rgba(9, 40, 69, 0.8);
+    --clr-60-primary: rgba(9, 40, 69, 0.6);
+    --clr-secondary: #C0C3C6;
+    --clr-light: #E4E7EB;
+    --clr-dark: rgba(0, 0, 0, 0.9);
+    --clr-white: #FFFFFF;
+    --clr-btn: rgba(228, 231, 235, 0.4);
+    --background-hero: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.38%, #C0C3C6 88.02%);
+    --background-body1: linear-gradient(180deg, rgba(192, 195, 198, 0) 65.62%, #C0C3C6 99.99%, #C0C3C6 100%), linear-gradient(180deg, #C0C3C6 0%, rgba(228, 231, 235, 0.5) 36.75%);
+    --background-body2: linear-gradient(180deg, rgba(192, 195, 198, 0) 63.02%, #C0C3C6 100%), linear-gradient(180deg, #C0C3C6 0%, rgba(192, 195, 198, 0) 44.79%);
+    --background-body3: linear-gradient(180deg, #C0C3C6 0%, rgba(192, 195, 198, 0.2) 100%);
+    --background-body3a:  rgba(192, 195, 198, 0.2);
+    --background-body3b: linear-gradient(180deg, rgba(192, 195, 198, 0.2) 0%, #C0C3C6 100%);
+    --background-body4: linear-gradient(180deg, #C0C3C6 0%, rgba(255, 255, 255, 0) 49.65%);
+    --background-body4a: linear-gradient(180deg, rgba(255, 255, 255, 0) 63.02%, #C0C3C6 100%);
+    --background-body5: linear-gradient(180deg, #C0C3C6 0%, rgba(192, 195, 198, 0) 100%);
+    --icon-ig: linear-gradient(196.84deg, #515BD4 5.52%, #9510B8 26.55%, #E51804 58.91%, #FFBF00 86.42%);
+    --icon-twitter: #1DA1F2;
+    --icon-linkedin: #0A66C2;
+    --icon-github: #687076;
+
+    /* fonts sizes */
+    --fw-regular: 300;  
+    --fw-medium: 400;
+    --fw-medium-500: 500;
+    --fw-bold: 700;
+    --fw-black: 900;   
+
+    /* fonts family */
+    --ff-title: 'Epilogue', sans-serif;
+    --ff-text1:'Fira Code','Roboto Mono', monospace; 
+    --ff-text2:'Inter','Kantumruy Pro', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-title);
+    font-size: 1.125rem;
+    color: var(--clr-primary);
+    line-height: 1.2;
+    /* background: gray; */
+}
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+.btn {
+    font-family: var(--ff-text1);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .5em 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: var(--fw-medium-500);
+    margin-bottom: .5em;
+    border-radius: 6px;
+}
+
+.btn--primary {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+}
+
+.btn--primary:hover {
+    background-color: var(--clr-dark);
+}
+
+.btn--outline {
+    outline:3px solid var(--clr-primary);
+    outline-offset: -3px;
+    color: var(--clr-primary);
+}
+
+.btn--outline:hover {
+    background: var(--clr-dark);
+    outline-color: var(--clr-light);
+    color: var(--clr-light);
+}
+
+header {
+    background-color: var(--clr-white);
+    padding: 1em;
+    text-align: center;
+}
+
+.logo{
+    width: 35px;
+    margin-top: 0.5em;
+}
+
+.nav__list {
+    display: flex;
+    font-family: var(--ff-text1);
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: var(--fw-medium-500);
+    letter-spacing: 1px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    padding: 2em 1em;;
+}
+
+.main__title {
+    font-family: var(--ff-title);
+    margin: 0;
+    padding: 0 ;
+}
+
+.main__subtitle {
+    display: flex;
+    color: var(--clr-60-primary);
+}
+
+.main__title h1 {
+    font-size: 3rem;
+}
+
+.main__title h4 {
+    font-family: var(--ff-text1);
+}
+
+.content--main {
+    background: var(--background-hero);
+}
