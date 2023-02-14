@@ -37,8 +37,9 @@
     --fw-regular: 300;  
     --fw-medium: 400;
     --fw-medium-500: 500;
+    --fw-semibold:600;
     --fw-bold: 700;
-    --fw-black: 900;   
+    --fw-black: 800;   
 
     /* fonts family */
     --ff-title: 'Epilogue', sans-serif;
@@ -58,6 +59,13 @@ body {
 
 h1, h2, h3 {
     line-height: 1;
+}
+
+h2 {
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semibold);
+    font-size: 1.75rem;
+    letter-spacing: -0.015em;
 }
 
 /* inicio estilo botones */
@@ -110,6 +118,27 @@ header {
     margin-top: 0.5em;
 }
 
+.parrafo {
+    font-family: var(--ff-text2);
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+    letter-spacing: 0.08em;
+}
+
+.parrafo--enfasis {
+    font-family: var(--ff-title);
+    font-size: 1rem;
+    font-weight: var(--fw-semibold);
+    letter-spacing: 0.08em;
+}
+
+.parrafo--body-1-2-3 {
+    font-family: var(--ff-text2);
+    font-size: 0.875rem;
+    font-weight: var(--fw-regular);
+    letter-spacing: 0.08em;
+}
+
 /* inicio menu */
 .nav__list {
     display: flex;
@@ -153,10 +182,27 @@ header {
 
 .main__title h1 {
     font-size: 3rem;
+    font-weight: var(--fw-bold);
 }
 
 .main__title h4 {
     font-family: var(--ff-text1);
 }
 /* fin estilos hero section */
+
+.content--body-1 {
+    background: var(--background-body1);
+}
+
+.photo {
+    width: 80%;
+    max-width: 400px;
+}
+
+.body--items {
+    font-family: var(--ff-text1);
+    font-weight: var(--fw-medium);
+    font-size: 0.75rem;
+}
+
 
