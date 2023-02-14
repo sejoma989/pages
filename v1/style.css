@@ -60,6 +60,8 @@ h1, h2, h3 {
     line-height: 1;
 }
 
+/* inicio estilo botones */
+
 .btn {
     font-family: var(--ff-text1);
     display: inline-block;
@@ -94,7 +96,9 @@ h1, h2, h3 {
     outline-color: var(--clr-light);
     color: var(--clr-light);
 }
+/* fin estilo botones */
 
+/* inicio navbar - header */
 header {
     background-color: var(--clr-white);
     padding: 1em;
@@ -106,6 +110,7 @@ header {
     margin-top: 0.5em;
 }
 
+/* inicio menu */
 .nav__list {
     display: flex;
     font-family: var(--ff-text1);
@@ -123,9 +128,16 @@ header {
     text-decoration: none;
     color: inherit;
 }
+/* fin menu */
 
+/* contenedor movil */
 .content {
     padding: 2em 1em;;
+}
+
+/* inicio estilos hero section */
+.content--main {
+    background: var(--background-hero);
 }
 
 .main__title {
@@ -146,7 +158,5 @@ header {
 .main__title h4 {
     font-family: var(--ff-text1);
 }
+/* fin estilos hero section */
 
-.content--main {
-    background: var(--background-hero);
-}
