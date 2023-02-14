@@ -70,9 +70,17 @@ h2 {
 
 h3 {
     font-family: var(--ff-title);
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-semibold);
     font-size: 1.25rem;
     letter-spacing: 0.08em;
+}
+
+h4 {
+    font-family: var(--ff-text1);
+    font-size: 1.125rem;
+    font-weight: var(--fw-medium-500);
+
+
 }
 
 /* inicio estilo botones */
@@ -284,3 +292,84 @@ header {
     margin: 0.25em;
     padding: 0.25em;
 }
+/* fin estilos seccion experiencia */
+
+/* inicio estilos seccion trabajos */
+.content--body-3 {
+    background: var(--background-body3);
+}
+
+.proyecto, .proyecto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.proyecto__gif {
+    width:100%;
+    max-width: 700px;
+    opacity: 0.5;
+}
+
+.proyecto__gif:hover {
+    opacity: 1;
+}
+
+.proyecto__header, .proyecto2__header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proyecto__header {
+    align-items: flex-end;
+}
+
+.proyecto2__header  {
+    align-items: flex-start;
+}
+
+
+.proyecto__header h4, .proyecto2__header h4, .proyecto__header h3, .proyecto2__header h3 {
+    margin-bottom: 0;
+}
+
+
+
+.proyecto__descripcion, .proyecto2__descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr-light);
+    align-items: flex-end;
+}
+
+.proyecto__herramientas, .proyecto2__herramientas  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--ff-text1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.75rem;
+    font-weight: var(--fw-medium-500);
+    letter-spacing: -0.08em;
+}
+
+.proyecto__herramientas__item {
+    margin: 0.25em;
+    padding: 0.25em;
+    text-align: center;
+}
+
+.content--body-3a {
+    background: var(--background-body3a);
+}
+
+.content--body-3b {
+    background: var(--background-body3b);
+}
+/* fin seccion estilo trabajos */
