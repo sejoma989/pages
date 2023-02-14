@@ -113,11 +113,6 @@ header {
     text-align: center;
 }
 
-.logo{
-    width: 35px;
-    margin-top: 0.5em;
-}
-
 .parrafo {
     font-family: var(--ff-text2);
     font-size: 1rem;
@@ -137,6 +132,11 @@ header {
     font-size: 0.875rem;
     font-weight: var(--fw-regular);
     letter-spacing: 0.08em;
+}
+
+.logo{
+    width: 35px;
+    margin-top: 0.5em;
 }
 
 /* inicio menu */
@@ -190,6 +190,7 @@ header {
 }
 /* fin estilos hero section */
 
+/* inicio estilos seccion sobre mi */
 .content--body-1 {
     background: var(--background-body1);
 }
@@ -199,10 +200,23 @@ header {
     max-width: 400px;
 }
 
+.body1__herramientas {
+    display: flex;
+}
+
+
 .body--items {
     font-family: var(--ff-text1);
     font-weight: var(--fw-medium);
     font-size: 0.75rem;
 }
 
+.body--items li {
+    list-style: square;
+}
+/* fin seccion sobre mi */
 
+/* inicio estilos seccion experiencia */
+.content--body-2 {
+    background: var(--background-body2);
+}
