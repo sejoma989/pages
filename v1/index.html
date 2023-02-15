@@ -18,19 +18,20 @@
 
     <!-- inicio navbar -->
     <header>
-        <img src="./assets/static/img/logo.svg" alt="logo" class="logo ">
+        <a href="#"><img src="./assets/static/img/logo.svg" alt="logo" class="logo"></a>
+        
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a href="#" class="nav__link">Sobre mi</a></li>
-                    <li class="nav__list-item"><a href="#" class="nav__link">Experiencia</a></li>
-                    <li class="nav__list-item"><a href="#" class="nav__link">Trabajos</a></li>
-                    <li class="nav__list-item"><a href="#" class="nav__link">Contactame</a></li>
+                    <li class="nav__list-item"><a href="#sobre_mi" class="nav__link">Sobre mi</a></li>
+                    <li class="nav__list-item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
+                    <li class="nav__list-item"><a href="#trabajos" class="nav__link">Trabajos</a></li>
+                    <li class="nav__list-item"><a href="#contacto" class="nav__link">Contactame</a></li>
                 </ul>
             </nav>
         
         <div>
-            <a href="" class="btn btn--outline">Descargar resumen</a>
+            <a href="./assets/static/doc/V2.0_en-res-dev-noref-jose_valencia-11_22.docx.pdf" target="_blank" class="btn btn--outline">Descargar resumen</a>
         </div>
     </header>
     <!-- fin navbar -->
@@ -43,14 +44,14 @@
         </div>
         <div class="main__content">
             <p class="parrafo">Soy un <strong class="parrafo--enfasis">ingeniero de software</strong> especializandose en construcción y diseño de magníficas <strong class="parrafo--enfasis">experiencias digitales</strong>. Actualmente estoy enfocado en construir productos con diseños <strong class="parrafo--enfasis">human-centered</strong> como freelance para JT servicio integral entre otros.</p>
-            <a href="#" class="btn btn--primary">Contacta conmigo</a>
-            <a href="#" class="btn btn--outline">Descarga resumen</a>
+            <a href="#contacto" class="btn btn--primary">Contacta conmigo</a>
+            <a href="./assets/static/doc/V2.0_en-res-dev-noref-jose_valencia-11_22.docx.pdf" target="_blank" class="btn btn--outline">Descarga resumen</a>
         </div>
     </section>
     <!-- fin hero section -->
 
     <!-- inicio seccion sobre mi -->
-    <section class="content content--body-1">
+    <section id="sobre_mi" class="content content--body-1">
         <h2 class="centrar">Sobre mi</h2>
         <div class="body1__content centrar">
 
@@ -81,20 +82,20 @@
     <!-- fin seccion sobre mi -->
 
     <!-- inicio seccion experiencia -->
-    <section class="content content--body-2">
-        <h2 class="centrar">Mis retos laborales</h2>
+    <section id="experiencia" class="content content--body-2">
+        <h2  class="centrar">Mis retos laborales</h2>
         <div class="body2__content">
 
             <nav class="body2__nav">
-                <ul class="body2__nav__list">
-                    <li class="body2__nav__list-item"><a class="btn--outline-2 body2__nav__link" href="">Lending Front</a></li>
-                    <li class="body2__nav__list-item"><a class="btn--outline-2 body2__nav__link" href="">Mi cuento</a></li>
-                    <li class="body2__nav__list-item"><a class="btn--outline-2 body2__nav__link" href="">GMYS</a></li>
-                    <li class="body2__nav__list-item"><a class="btn--outline-2 body2__nav__link" href="">OhMyFi</a></li>
+                <ul class="body2__nav__list tab">
+                    <li class="body2__nav__list-item"><a class="tablinks btn--outline-2 body2__nav__link" onclick="openCargo(event, 'lending')" id="defaultOpen" >Lending Front</a></li>
+                    <li class="body2__nav__list-item"><a class="tablinks btn--outline-2 body2__nav__link" onclick="openCargo(event, 'micuento')" >Mi cuento</a></li>
+                    <li class="body2__nav__list-item"><a class="tablinks btn--outline-2 body2__nav__link" onclick="openCargo(event, 'gmys')" >GMYS</a></li>
+                    <li class="body2__nav__list-item"><a class="tablinks btn--outline-2 body2__nav__link" onclick="openCargo(event, 'ohmify')" >OhMyFi</a></li>
                 </ul>
             </nav>
-<!-- 
-            <div class="body2__texto">
+
+            <div id="ohmify" class="tabcontent body2__texto">
                 <div class="body2__header">
                     <h3>Backend Developer en OhMyFi</h3>
                     <p>Febrero - Mayo 2018</p>
@@ -108,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="body2__texto">
+            <div id="gmys" class="tabcontent body2__texto">
                 <div class="body2__header">
                     <h3>Jefe de Sistemas en GMYS</h3>
                     <p>Octubre 2019 - Abril 2020</p>
@@ -122,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="body2__texto">
+            <div id="micuento" class="tabcontent body2__texto">
                 <div class="body2__header">
                     <h3>Frontend developer en Mi cuento</h3>
                     <p>Abril 2021 - Octubre 2022</p>
@@ -134,9 +135,9 @@
                         <li class="parrafo--body-1-2-3 body2__list__link">Desarrollo de piezas funcionales de codigo para las vistas usando React.js, Sass y Typescript ES6 para la arquitectura molecular.</li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
-            <div class="body2__texto">
+            <div id="lending" class="tabcontent body2__texto">
                 <div class="body2__header">
                     <h3>Software Engineer en Lending Front Colombia</h3>
                     <p>Marzo - Junio 2022</p>
@@ -155,7 +156,7 @@
     <!-- fin seccion experiencia -->
 
     <!-- inicio seccion trabajos destacados -->
-    <section class="content content--body-3">
+    <section id="trabajos" class="content content--body-3">
         <h2 class="centrar">Algunos de mis proyectos</h2>
 
         <div class="proyecto">
@@ -441,21 +442,21 @@
     <!-- fin seccion otros proyectos -->
 
     <!-- inicio seccion contactame -->
-    <section class="centrar content content--body-5">
+    <section id="contacto" class="centrar content content--body-5">
 
         <h2>Contáctame</h2>
 
         <p class="parrafo--body-5">Actualmente estoy trabajando en varios proyectos, no estoy buscando activamente nuevas oportunidades hasta finales de Febrero, sin embargo, siempre estoy abierto a conversar y escuchar propuestas para colaborar en proyectos que transformen el mundo</p>
 
-        <a href="" class="btn btn--outline">¡Di hola!</a>
+        <a href="mailto:sejoma989@gmail.com?Subject=¡Hola%20Jose!,%20vi%20tu%20portafolio%20web%20y%20me%20gustaria%20contactarme%20contigo%20porque%20" class="btn btn--outline">¡Di hola!</a>
 
         <p >Te responderé lo más pronto posible, tambien puedes contactarme a traves de mis redes sociales.</p>
 
         <ul class="icons">
-            <li><img src="./assets/static/img/linkedin.svg" alt="Logo linkedin" class="icon--list"></li>
-            <li><img src="./assets/static/img/twitter.svg" alt="Logo twitter" class="icon--list"></li>
-            <li><img src="./assets/static/img/github.svg" alt="Logo Github Negro" class="icon--list"></li>
-            <li><img src="./assets/static/img/instagram.svg" alt="Logo instagram" class="icon--list"></li>
+            <li><a href="https://www.linkedin.com/in/joselovalencia/" target="_blank"><img src="./assets/static/img/linkedin.svg" alt="Logo linkedin" class="icon--list"></a></li>
+            <li><a href="https://twitter.com/joselocode" target="_blank"><img src="./assets/static/img/twitter.svg" alt="Logo twitter" class="icon--list"></a></li>
+            <li><a href="https://github.com/sejoma989" target="_blank"><img src="./assets/static/img/github.svg" alt="Logo Github Negro" class="icon--list"></a></li>
+            <li><a href="https://www.instagram.com/joselo_code/" target="_blank"><img src="./assets/static/img/instagram.svg" alt="Logo instagram" class="icon--list"></a></li>
         </ul>
 
 
@@ -463,10 +464,27 @@
     </section>
 
     <footer>
-        <img src="./assets/static/img/logo.svg" alt="logo" class="logo ">
+        <a href="#sobre_mi""><img src="./assets/static/img/logo.svg" alt="logo" class="logo"></a>
         <p>© Diseño y desarrollo por Jose Valencia 2023.  Dios te ama y yo también.</p>
     </footer>
 
+    <script>
+        document.getElementById("defaultOpen").click();
+
+        function openCargo(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
 
 </body>
 </html>
