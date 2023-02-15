@@ -307,16 +307,7 @@ ul.sidenav li a
     background-color: var(--clr-dark);
 }
 
-@media screen and (max-width: 526px) {
-    .body2__nav__link {
-      text-align: center;
-      float: none;
-    }
 
-    .body2__nav__list-item {
-        width: 100%;
-    }
-  }
 
 .btn--outline-2 {
     background: var(--clr-60-primary);
@@ -517,6 +508,7 @@ ul.sidenav li a
 
 .icons {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -545,7 +537,16 @@ footer p {
 
 /* breakpoint tablets */
 
+@media screen and (max-width: 526px) {
+    .body2__nav__link {
+      text-align: center;
+      float: none;
+    }
 
+    .body2__nav__list-item {
+        width: 100%;
+    }
+  }
 
 @media screen and (min-width:700px){
 
