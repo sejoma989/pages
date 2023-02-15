@@ -79,8 +79,6 @@ h4 {
     font-family: var(--ff-text1);
     font-size: 1.125rem;
     font-weight: var(--fw-semibold);
-
-
 }
 
 /* inicio estilo botones */
@@ -119,6 +117,7 @@ h4 {
     outline-color: var(--clr-light);
     color: var(--clr-light);
 }
+
 /* fin estilo botones */
 
 /* inicio navbar - header */
@@ -177,15 +176,17 @@ header {
     padding: 2em 1em 10rem;
 }
 
+
 /* inicio estilos hero section */
 .content--main {
+    padding: 2em 1em 10rem;
     background: var(--background-hero);
 }
 
 .main__title {
     font-family: var(--ff-title);
-    margin: 0;
-    padding: 0 ;
+    margin-bottom: 0.75em;
+    padding: 0;
 }
 
 .main__subtitle {
@@ -196,10 +197,16 @@ header {
 .main__title h1 {
     font-size: 3rem;
     font-weight: var(--fw-bold);
+    line-height: 1;
+    margin-bottom: 0;
 }
 
 .main__title h4 {
     font-family: var(--ff-text1);
+}
+
+.main__content p {
+    margin-bottom: 2em;
 }
 /* fin estilos hero section */
 
@@ -208,9 +215,18 @@ header {
     background: var(--background-body1);
 }
 
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .photo {
     width: 80%;
-    max-width: 400px;
+    /* height: 80%; */
+    max-width: 300px;
+    /* max-height: 400px; */
 }
 
 .body1__herramientas {
@@ -437,14 +453,7 @@ header {
 /* inicio seccion contactame */
 .content--body-5 {
     background: var(--background-body5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
-
-.content--body-5 h2 {
-    text-align: center;
 }
 
 .content--body-5 p {
@@ -459,14 +468,20 @@ header {
 .content--body-5 a {
     width: 50%;
     text-align: center;
+    padding-bottom: 0.5em;
 }
 
 .icons {
     display: flex;
     justify-content: space-between;
-    margin: 1em 0;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.icons li {
+    margin: 1em;
+    padding: 1em;
 }
 
 footer {
@@ -482,4 +497,26 @@ footer p {
     letter-spacing: -0.015em;
     color: var(--clr-80-primary);
     text-align: center;
+}
+
+/* breakpoint tablets */
+@media screen and (min-width: 700px){
+
+    .content {
+        display: grid;
+        grid-template-columns: 
+            minmax(1em, 1fr) 
+            minmax(20rem, 50ch) 
+            minmax(1em, 2fr);
+        justify-items: start;
+    }
+
+    .content > * {
+        grid-column: 2 / 3;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    
 }
