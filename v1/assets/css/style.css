@@ -439,12 +439,17 @@ ul.sidenav li a
 /* inicio seccion estilo otros trabajos */
 .content--body-4 {
     background: var(--background-body4);
+    padding-bottom: 1em;
 }
 
 .otros {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.otros a {
+    margin-top: 2em;
 }
 
 .otro--proyecto {
@@ -486,6 +491,11 @@ ul.sidenav li a
 
 .content--body-4a {
     background: var(--background-body4a);
+}
+
+.collapsible-content {
+    display: none;
+    overflow: hidden;
 }
 /* fin seccion estilo otros trabajos */
 

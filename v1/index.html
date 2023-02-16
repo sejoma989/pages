@@ -126,7 +126,7 @@
             <div id="micuento" class="tabcontent body2__texto">
                 <div class="body2__header">
                     <h3>Frontend developer en Mi cuento</h3>
-                    <p>Abril 2021 - Octubre 2022</p>
+                    <p>Marzo - Octubre 2021</p>
                 </div>
                 <div class="body2__content">
                     <ul class="body2__list">
@@ -363,7 +363,9 @@
     </section>
 
     <section class="content content--body-4a">
-        <div class="container proyectos--otros">
+
+        <a href="#ver_mas_otros" class="btn btn--outline collapsible">Ver más proyectos</a>
+        <div id="ver_mas_otros" class="container proyectos--otros collapsible-content">
 
             <div class="otros">
 
@@ -465,23 +467,8 @@
         <p>© Diseño y desarrollo por Jose Valencia 2023.  Dios te ama y yo también.</p>
     </footer>
 
-    <script>
-        document.getElementById("defaultOpen").click();
 
-        function openCargo(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-    </script>
+    <script type="text/javascript" src="index.js"></script>
 
 </body>
 </html>
