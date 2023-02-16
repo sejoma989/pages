@@ -398,12 +398,16 @@ ul.sidenav li a
     text-decoration: none;
 }
 
+.link_git:link {
+    color: var(--clr-dark);
+}
+
 .link_git:hover {
     opacity: .5;
 }
 
 .link_git:visited {
-    color: inherit;
+    color: var(--clr-80-primary);
 }
 /* fin estilos seccion experiencia */
 
