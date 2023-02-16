@@ -647,7 +647,24 @@ footer p {
         grid-template-columns: 
             minmax(15%, 1fr) 
             minmax(20rem, 75ch) 
+            minmax(1fr)
             minmax(1em, 2fr);
+    }
+
+    .nav {
+        width: 100%;
+        grid-column: 2;
+        align-items: flex-end;
+    }
+
+    .button-top {
+        grid-column: 3;
+        justify-self: start;
+        margin-left: 10%;
+    }
+
+    h2 {
+        font-size: 3rem;
     }
 
     .main__title h1 {
