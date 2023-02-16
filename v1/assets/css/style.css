@@ -122,9 +122,11 @@ h4 {
 
 /* inicio navbar - header */
 header {
+    display: flex;
     background-color: var(--clr-white);
-    padding: 1em;
+    padding: 0.25em;
     text-align: center;
+    flex-direction: column;
 }
 
 .parrafo {
