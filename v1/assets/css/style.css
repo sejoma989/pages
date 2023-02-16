@@ -635,9 +635,9 @@ footer p {
     }
 }
 @media screen and (max-width: 526px) {
-    .content {
-        /* background-color: #0ac210; */
-    }
+    /* .content {
+        background-color: #0ac210;
+    } */
     .body2__nav__list-item {
         margin: 0;
         padding: 0;
