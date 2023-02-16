@@ -46,6 +46,10 @@
     --ff-text1:'Fira Code','Roboto Mono', monospace; 
     --ff-text2:'Inter','Kantumruy Pro', sans-serif;
 
+    --grid: minmax(10%, 1fr) 
+            minmax(20rem, 50ch) 
+            minmax(1em, 2fr);
+
 }
 
 body {
@@ -129,6 +133,8 @@ header {
     flex-direction: column;
 }
 
+
+
 .parrafo {
     font-family: var(--ff-text2);
     font-weight: var(--fw-regular);
@@ -172,6 +178,36 @@ header {
     color: inherit;
 }
 /* fin menu */
+
+@media screen and (min-width: 700px) {
+    header {
+        display: grid;
+        grid-template-columns: var(--grid);
+    }
+
+    .logo, .nav, .button-top {
+        grid-row: 1;
+        /* justify-self: start; */
+    }
+
+    .logo {
+        grid-column: 1;
+    }
+
+    .nav {
+        width: 100%;
+        grid-column: 2;
+        align-items: flex-end;
+    }
+
+    .button-top {
+        grid-column: 3;
+        width: 100%m;
+        justify-self: end;
+        padding-top: 0.5rem ;
+    }
+    
+}
 
 /* contenedor movil */
 .content {
@@ -586,16 +622,22 @@ footer p {
     .content {
         /* background-color: #0A66C2; */
         display: grid;
-        grid-template-columns: 
-            minmax(10%, 1fr) 
-            minmax(20rem, 50ch) 
-            minmax(1em, 2fr);
+        grid-template-columns: var(--grid);
         justify-items: start;
     }
 
     .content > * {
         grid-column: 2 / 3;
     }
+
+    .nav__list {
+        font-size: 0.875rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+    
 
 }
 
