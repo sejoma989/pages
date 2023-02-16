@@ -7,7 +7,6 @@ document.getElementById("defaultOpen").click();
 
 function openCargo(evt, cityName) {    
     
-    let i;
     tabcontent = tabcontent;
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
