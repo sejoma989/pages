@@ -380,9 +380,30 @@ ul.sidenav li a
     letter-spacing: 1px;
 }
 
+.body2__header h3 a {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+.body2__header h3 a:hover {
+    color: var(--clr-60-primary);
+}
+
 .body2__list__link {
     margin: 0.25em;
     padding: 0.25em;
+}
+
+.link_git {
+    text-decoration: none;
+}
+
+.link_git:hover {
+    opacity: .5;
+}
+
+.link_git:visited {
+    color: inherit;
 }
 /* fin estilos seccion experiencia */
 
@@ -472,6 +493,15 @@ ul.sidenav li a
 
 .content--body-3b {
     background: var(--background-body3b);
+}
+
+.hide {
+    display: none;
+}
+
+.myDIV:hover + .hide {
+    display: block;
+    color: yellow;
 }
 /* fin seccion estilo trabajos */
 

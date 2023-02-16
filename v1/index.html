@@ -18,14 +18,14 @@
 
     <!-- inicio navbar -->
     <header>
-        <a href="#"><img src="./assets/static/img/logo.svg" alt="logo" class="logo"></a>
+        <a href="#"><img src="./assets/static/img/logo.svg" alt="logo" class="logo link_git"></a>
         
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__list-item"><a href="#sobre_mi" class="nav__link">Sobre mi</a></li>
-                <li class="nav__list-item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
-                <li class="nav__list-item"><a href="#trabajos" class="nav__link">Trabajos</a></li>
-                <li class="nav__list-item"><a href="#contacto" class="nav__link">Contactame</a></li>
+                <li class="link_git nav__list-item"><a href="#sobre_mi" class="nav__link">Sobre mi</a></li>
+                <li class="link_git nav__list-item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
+                <li class="link_git nav__list-item"><a href="#trabajos" class="nav__link">Trabajos</a></li>
+                <li class="link_git nav__list-item"><a href="#contacto" class="nav__link">Contactame</a></li>
             </ul>
         </nav>
         
@@ -94,7 +94,7 @@
 
             <div id="ohmify" class="tabcontent body2__texto">
                 <div class="body2__header">
-                    <h3>Backend Developer en OhMyFi</h3>
+                    <h3>Backend Developer en <a href="https://ohmyfi.co/" target="_blank">OhMyFi</a></h3>
                     <p>Febrero - Mayo 2018</p>
                 </div>
                 <div class="body2__content">
@@ -108,7 +108,7 @@
 
             <div id="gmys" class="tabcontent body2__texto">
                 <div class="body2__header">
-                    <h3>Jefe de Sistemas en GMYS</h3>
+                    <h3>Jefe de Sistemas en <a href="https://www.gmys.com.co/" target="_blank">GMYS</a></h3>
                     <p>Octubre 2019 - Abril 2020</p>
                 </div>
                 <div class="body2__content">
@@ -122,7 +122,7 @@
 
             <div id="micuento" class="tabcontent body2__texto">
                 <div class="body2__header">
-                    <h3>Frontend developer en Mi cuento</h3>
+                    <h3>Frontend developer en <a href="https://www.linkedin.com/company/micuentosas/" target="_blank">Mi cuento</a></h3>
                     <p>Marzo - Octubre 2021</p>
                 </div>
                 <div class="body2__content">
@@ -136,7 +136,7 @@
 
             <div id="lending" class="tabcontent body2__texto">
                 <div class="body2__header">
-                    <h3>Software Engineer en Lending Front Colombia</h3>
+                    <h3>Software Engineer en <a href="https://lendingfront.com/" target="_blank">Lending Front Colombia</a></h3>
                     <p>Marzo - Junio 2022</p>
                 </div>
                 <div class="body2__content">
@@ -175,7 +175,7 @@
                     <li class="proyecto__herramientas__item">mysql</li>
                 </ul>
                 <div>
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://github.com/sejoma989/passwordManager" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>                    
                 </div>
             </div>
         </div>
@@ -206,8 +206,8 @@
                 </ul>
 
                 <div>
-                    <img src="./assets/static/img/postman.svg" alt="Logo Postman">
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://documenter.getpostman.com/view/7174646/2s8Z6vYuKD#3273959e-2b0c-4e8c-b6d3-6235dacd553b" target="_blank" class="link_git"><img src="./assets/static/img/postman.svg" alt="Logo Postman"><a>                        
+                    <a href="https://github.com/sejoma989/restserver_basic/blob/main/README.md" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>
                 </div>                
             </div>
             
@@ -237,7 +237,7 @@
                 </ul>
 
                 <div>
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://github.com/sejoma989/webserver_basic" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>
                 </div>            
             </div>
         </div>
@@ -267,7 +267,7 @@
 
                 <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
                 <div>
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://github.com/sejoma989/weather_console_location" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>
                 </div>
             </div>            
         </div>
@@ -276,7 +276,7 @@
     <!-- fin seccion trabajos destacados -->
 
     <!-- inicio seccion otros proyectos -->
-    <section class="content content--body-4">
+    <section id="otros_proyectos" class="content content--body-4">
         <h2 class="centrar">Otros proyectos destacados</h2>
         <div class="container proyectos--otros">
 
@@ -284,7 +284,7 @@
 
                 <div class="otro--proyecto">
 
-                    <h3>Construyendo un plugin para convertir Wordpress en un REST Server</h3>
+                    <a href="https://instituto.emmauscolombia.com/" target="_blank" class="link_git"><h3>Construyendo un plugin para convertir Wordpress en un REST Server</h3></a>
 
                     <p class="parrafo--body4">Plugin de wordpress que permite el manejo personalizado para una base de datos del instituto bíblico Emaus Colombia, que implementa un REST server dentro del panel administratico de worpress para la creacion de CRUD y funciones administrativas sobre la base de datos.</p>
 
@@ -297,7 +297,8 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="#otros_proyectos" class="myDIV link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>                    
+                    <div class="hide">De momento es un Repositorio Privado</div> 
                 </div>
 
                 <div class="otro--proyecto">
@@ -314,7 +315,9 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="#otros_proyectos" class="myDIV link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>                    
+                    <div class="hide">De momento es un Repositorio Privado</div> 
+
                 </div>
 
             </div>
@@ -335,7 +338,8 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="#otros_proyectos" class="myDIV link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>                    
+                    <div class="hide">De momento es un Repositorio Privado</div> 
                 </div>
 
                 <div class="otro--proyecto">
@@ -352,7 +356,8 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="#otros_proyectos" class="myDIV link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>                    
+                    <div class="hide">De momento es un Repositorio Privado</div> 
                 </div>
 
             </div>
@@ -380,7 +385,8 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://github.com/sejoma989/Console_todo_list" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>
+
                 </div>
 
                 <div class="otro--proyecto">
@@ -396,7 +402,7 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://github.com/sejoma989/triqui-js" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>
                 </div>
 
             </div>
@@ -416,7 +422,7 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://github.com/sejoma989/presupuesto_javascript" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>
                 </div>
 
                 <div class="otro--proyecto">
@@ -432,7 +438,7 @@
                     </ul>
 
                     <!-- <img src="./static/img/postman.svg" alt="Logo Postman"> -->
-                    <img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub">
+                    <a href="https://github.com/sejoma989/calculadora_javascript_bootstrap" target="_blank" class="link_git"><img src="./assets/static/img/github-circle-mono.svg" alt="Logo GitHub"></a>
                 </div>
 
             </div>
@@ -451,16 +457,16 @@
             <p >Te responderé lo más pronto posible, tambien puedes contactarme a traves de mis redes sociales.</p>
     
             <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/joselovalencia/" target="_blank"><img src="./assets/static/img/linkedin.svg" alt="Logo linkedin" class="icon--list"></a></li>
-                <li><a href="https://twitter.com/joselocode" target="_blank"><img src="./assets/static/img/twitter.svg" alt="Logo twitter" class="icon--list"></a></li>
-                <li><a href="https://github.com/sejoma989" target="_blank"><img src="./assets/static/img/github.svg" alt="Logo Github Negro" class="icon--list"></a></li>
-                <li><a href="https://www.instagram.com/joselo_code/" target="_blank"><img src="./assets/static/img/instagram.svg" alt="Logo instagram" class="icon--list"></a></li>
+                <li><a href="https://www.linkedin.com/in/joselovalencia/" target="_blank"><img src="./assets/static/img/linkedin.svg" alt="Logo linkedin" class="icon--list link_git"></a></li>
+                <li><a href="https://twitter.com/joselocode" target="_blank"><img src="./assets/static/img/twitter.svg" alt="Logo twitter" class="icon--list link_git"></a></li>
+                <li><a href="https://github.com/sejoma989" target="_blank"><img src="./assets/static/img/github.svg" alt="Logo Github Negro" class="icon--list link_git"></a></li>
+                <li><a href="https://www.instagram.com/joselo_code/" target="_blank"><img src="./assets/static/img/instagram.svg" alt="Logo instagram" class="icon--list link_git"></a></li>
             </ul>
             
     </section>
 
     <footer>
-        <a href="#sobre_mi""><img src="./assets/static/img/logo.svg" alt="logo" class="logo"></a>
+        <a href="#sobre_mi""><img src="./assets/static/img/logo.svg" alt="logo" class="link_git logo"></a>
         <p>© Diseño y desarrollo por Jose Valencia 2023.  Dios te ama y yo también.</p>
     </footer>
 
