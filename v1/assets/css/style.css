@@ -133,7 +133,11 @@ header {
     flex-direction: column;
 }
 
-
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .parrafo {
     font-family: var(--ff-text2);
@@ -179,35 +183,7 @@ header {
 }
 /* fin menu */
 
-@media screen and (min-width: 700px) {
-    header {
-        display: grid;
-        grid-template-columns: var(--grid);
-    }
 
-    .logo, .nav, .button-top {
-        grid-row: 1;
-        /* justify-self: start; */
-    }
-
-    .logo {
-        grid-column: 1;
-    }
-
-    .nav {
-        width: 100%;
-        grid-column: 2;
-        align-items: flex-end;
-    }
-
-    .button-top {
-        grid-column: 3;
-        width: 100%m;
-        justify-self: end;
-        padding-top: 0.5rem ;
-    }
-    
-}
 
 /* contenedor movil */
 .content {
@@ -672,7 +648,33 @@ footer p {
         font-size: 1rem;
     }
     
+    header {
+        display: grid;
+        grid-template-columns: var(--grid);
+    }
 
+    .logo, .nav, .button-top {
+        grid-row: 1;
+        /* justify-self: start; */
+    }
+
+    .logo {
+        grid-column: 1;
+    }
+
+    .nav {
+        width: 100%;
+        grid-column: 2;
+        align-items: flex-end;
+    }
+
+    .button-top {
+        grid-column: 3;
+        width: 100%m;
+        justify-self: end;
+        padding-top: 0.5rem ;
+    }
+    
 }
 
 @media screen and (min-width:1000px) {
