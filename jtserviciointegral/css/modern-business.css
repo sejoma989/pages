@@ -1,0 +1,130 @@
+/*
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+/* font-family: 'inter', sans-serif; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --clr-black: #2b2921;
+  --clr-cream: #f9f7ea;
+  --clr-jt: #f2e4e1;
+  --clr-dorado: #c0ad12;
+  --clr-salmon: #f4ece1;
+  --clr-white: #ffffff;
+  --nav-bg: rgba(244, 236, 225, 0.8);
+
+  /* font sizes */
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+  --fw-xbold: 800;
+
+  /* font family */
+  --ff-primary: "inter", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  /* color: var(--clr-black); */
+  padding-top: 70px;
+  background-color: var(--clr-jt);
+}
+
+.navbar {
+  background-color: var(--nav-bg);
+  padding: 0.5rem 1rem;
+  font-weight: var(--fw-bold);
+  border-radius: 10px;
+}
+
+a, a:visited, a:hover {
+  color: var(--clr-black);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-dorado);
+}
+
+/* .carousel-inner {
+  width: 100%;
+  height: 100%;
+} */
+
+.carousel-item {
+  /* left: -30px; */
+  height: 50vh;
+  min-height: 300px;
+  /* width: 100%; */
+  max-width: 1366px;
+  background: no-repeat left center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: var(--fw-xbold);
+  color: var(--clr-black);
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: var(--fw-xbold);
+  color: var(--clr-black);
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+}
+
+.card-body {
+  background-color: var(--clr-salmon);
+}
+
+.btn-directo {
+  background-color: var(--clr-dorado);
+  color: var(--clr-black);
+  font-weight: var(--fw-bold);
+  border-radius: 10px;
+}
+
+.btn-whatsapp {
+  background-color: #00bb2d;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--clr-salmon);
+  padding: 1rem 0;
+  color: var(--clr-black);
+}
